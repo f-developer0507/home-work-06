@@ -5,7 +5,6 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import App from "../App";
-import Login from "../pages/login/login";
 import Main from "../pages/main/main";
 import { Posts, Comments, Albums, Photos, Todos, Users } from "../pages";
 
@@ -13,7 +12,6 @@ const Index = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="" element={<App/>}>
-        <Route index element={<Login/>} />
         <Route path="main/*" element={<Main />}>
           <Route path="posts" element={<Posts />} />
           <Route path="comments" element={<Comments />} />
