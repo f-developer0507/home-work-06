@@ -1,0 +1,37 @@
+.posts__list {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.posts__item {
+  position: relative;
+  padding: 30px;
+
+  width: 300px;
+
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.posts-item__id {
+  position: absolute;
+  top: 0;
+  right: 10px;
+
+  font-size: 25px;
+  font-weight: 500;
+  
+  pointer-events: none;
+  opacity: .7;
+}
+
+.posts-item__title {
+  font-size: 17px;
+  text-transform: capitalize;
+}
+
+.posts-item__body {
+  font-size: 14px;
+  text-transform: capitalize;
+}
